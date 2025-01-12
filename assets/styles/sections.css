@@ -1,0 +1,54 @@
+.discover {
+    position: relative;
+    margin-top: 130px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 1.4em;
+    width: fit-content;
+}
+
+.discover::after {
+    position: absolute;
+    content: ">";
+    top: 3px;
+    right: -30px;
+    font-family: Tahoma;
+    font-weight: 400;
+    transition: transform .2s ease-in-out;
+}
+
+.discover:hover::after {
+
+    transform: translateX(5px);
+}
+
+/* games banner */ 
+.games {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.games .col-1 {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.games .col-1 {
+    width: 90px;
+}
+
+.games .col-1 .box {
+    height: 150px;
+    border-radius: 5px;
+    width: 90px;
+    background: linear-gradient(to bottom, violet, blue);
+}
+
+.games .col-1 h1 {
+    color: #fff;
+    font-family: Tahoma, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+}
