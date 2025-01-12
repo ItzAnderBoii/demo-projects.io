@@ -1,0 +1,196 @@
+.first-section {
+    position: relative;
+    margin: 90px 0 0 0;
+}
+
+.first-section .head-1 img {
+    height: 260px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+    box-shadow: 0 0 15px 0 rgb(0,0,0,0.3);
+}
+.first-section .head-1 {
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: Tahoma, sans-serif;
+}
+
+.first-section .head-1 h1 {
+    color: black;
+    font-weight: 600;
+    margin-bottom: 0;
+
+
+}
+
+.first-section .head-1 p {
+   color: #000000;
+   opacity: .6;
+}
+.first-section .head-1 span {
+    text-decoration: underline;
+    color: rgb(104, 255, 104);
+}
+
+.first-section .head-1 a {
+    margin-bottom: 0;
+    margin: 15px;
+    color: white;
+    padding: 15px 15px;
+    padding-left: 19px;
+    padding-right: 19px;
+    text-align: center;
+    height: auto;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 15px;
+    background: rgb(0, 0, 0);
+}
+
+
+
+/* second */
+.second-section {
+    position: relative;
+    margin: 35px 0 0 0;
+}
+
+.second-section .head-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.second-section .head-1 h1 {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.second-section .head-1 span {
+    color: rgb(0, 255, 128);
+}
+
+.second-section .image-1 {
+    display: flex;
+    position: relative;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.second-section .image-1 img {
+    height: 50px;
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* third */
+.third-section {
+    display: flex;
+    position: relative;
+    margin: 100px 0 0 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-section h1 {
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: transparent;
+    font-family: Verdana;
+    -webkit-text-stroke: 1px rgb(0,0,0);
+    font-size: 2em;
+}
+
+/* card */
+.card-section .containers {
+    display: flex;
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    font-family: Tahoma, sans-serif;
+}
+
+.card-section .containers p {
+    font-size: 1.1em;
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    color: black;
+    height: auto;
+    background: transparent;
+    padding: 5px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.card-section .containers h1 {
+    font-size: 1em;
+}
+
+/* footer */
+.footer {
+    position: absolute;
+    margin: 150px 0 0 0;
+    height: 300px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: black;
+    margin-bottom: 0;
+    border-radius: 10px;
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.footer .header-1{
+    margin-left: 20px;
+}
+.seperator {
+    animation: fadeIn linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    margin: auto;
+    height: 2px;
+    background: black;
+    width: 50%;
+    max-width: 50%;
+    border-radius: 1px;
+    margin-bottom: 10px;
+    opacity: .8;
+}

@@ -1,0 +1,83 @@
+body {
+    background: rgb(245, 245, 245);
+    height: 310vw;
+}
+.nav .containers {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    padding-bottom: 2px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+    background: rgb(255,255,255);
+    transition: box-shadow .2s ease-in-out;
+    box-shadow: 0 0 10px 0 rgb(0,0,0,0.3);
+}
+
+.nav .logo {
+    font-size: 1em;
+    pointer-events: none;
+    margin-left: 30px;
+    font-family: Tahoma;
+}
+
+.nav .logo span {
+    color: lightgreen;
+    font-family: Verdana, sans-serif, Tahoma;
+}
+
+.nav .containers .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.nav .containers .links a{
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color .2s ease-in-out;
+    font-family: sans-serif, Tahoma;
+}
+
+.nav .containers .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: center;
+    margin-right: 20px;
+}
+
+.nav .containers .buttons a {
+    height: auto;
+    font-size: 1em;
+    padding: 15px 15px;
+    background: rgb(0,0,0);
+    color: white;
+    border-radius: 35px;
+    text-decoration: none;
+    transition: background-color .3s ease-in-out, color .2s ease-in-out;
+    font-family: sans-serif, Tahoma;
+}
+
+
+/* hovering only */
+.nav .containers .links a:hover {
+    color: rgb(51, 212, 51);
+}
+
+.nav .containers .buttons a:hover {
+    background: rgb(235, 235, 235);
+    color: black;
+}
+
+.nav .containers:hover {
+    box-shadow: 0 0 35px 0 rgb(0,0,0,0.3);
+}
