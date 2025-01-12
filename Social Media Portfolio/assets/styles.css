@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(to bottom, rgb(34, 34, 34), black) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.user-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+
+}
+
+/* user informations */
+
+.user-index .user-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.user-index .user-infos h1 {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 2em;
+
+}
+
+.user-index .user-infos p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: rgba(148, 144, 144, 0.5);
+}
+
+
+.user-index .user-infos h1, .user-index .user-infos p {
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+.user-index .user-infos img {
+    height: 230px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px 0 rgba(24, 24, 24, 0.3);
+}
+
+/* links */
+.user-index .user-links-contains {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-index .user-links-contains .col-1, .user-index .user-links-contains .col-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px 10px 40px;
+    background: linear-gradient(to bottom, rgb(255,255,255), rgb(255,255,255,0.5));
+    border-radius: 45px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.user-index .user-links-contains .col-1 a, .user-index .user-links-contains .col-2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-family: Tahoma, sans-serif;
+
+}
+.user-index .user-links-contains .col-1 img, .user-index .user-links-contains .col-2 img {
+    height: 40px;
+    margin-right: 10px;
+}

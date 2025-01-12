@@ -1,0 +1,87 @@
+body {
+    margin-top: 90px;
+}
+/* navbar styles*/
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    background: #fff;
+    overflow: hidden;
+    z-index: 100;
+    box-shadow: 0 0 5px 0 rgb(0,0,0,0.3);
+}
+.nav .containers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .containers .logo-title {
+    color: black;
+    font-size: .8em;
+    margin-left: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav .containers .links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav .containers .logo-title span {
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+.nav .containers .links a {
+    position: relative;
+    color: black;
+    font-family: sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    transition: opacity .2s ease-in-out;
+}
+
+.nav .containers .buttons {
+
+    margin-right: 5px;
+   
+}
+.nav .containers .buttons a {
+    height: auto;
+    font-size: 1em;
+    font-family: Tahoma, sans-serif;
+    padding: 15px 15px 15px 15px;
+    background: black;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background .2s ease-in-out;
+}
+
+/* navbar hovering */
+.nav .containers .links a::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #292929;
+    transition: width .2s ease-in-out;
+}
+
+.nav .containers .links a:hover::after {
+    width: 100%;
+}
+
+.nav .containers .links a:hover {
+    opacity: .8;
+}
+
+.nav .containers .buttons a:hover {
+    background: #3d3d3d;
+}

@@ -1,0 +1,110 @@
+html {
+    scroll-behavior: smooth;
+}
+/* media queries only */
+
+@media screen and (min-width:320px) and (max-width: 866px){ /* mobile user */
+    .nav .containers .buttons a {
+        transition: 1s;
+        display: none;
+    }
+
+    body {
+       justify-content: center;
+    }
+
+   
+    .first-section .containers .intro a {
+        display: flex;
+        margin: 30px auto;
+        text-align: center;
+        width: 21%;
+        height: auto;
+        border-radius: 15px;
+        font-size: .9em;
+        font-family: sans-serif;
+        padding: 15px 15px 15px 15px;
+        background: black;
+        border-radius: 3px;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        transition: 1s;
+    
+    }
+
+    .nav .containers .links a {
+        display: flex;
+       
+    }
+    .nav .containers .links {
+        transition: 1s;
+        display: none;
+        gap: 20px;
+    }
+
+    .nav .containers .logo-title {
+        font-size: .8em;
+        margin-left: 3px;
+        transition: 1s;
+    }
+
+    .first-section .containers {
+        transition: 1s;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .first-section .containers .logo {
+        margin-right: 0;
+        transition: 1s;
+    }
+
+    .first-section .containers .intro {
+        margin-left: 0;
+        text-align: center;
+        margin-right: 0;
+        transition: 1s;
+        width:  100%;
+    }
+
+    .first-section .containers .intro h1 {
+        font-size: 1.9em;
+        transition: 1s;
+        text-align: center;
+    }
+
+    .first-section .containers .intro p {
+        font-size: 1em;
+    }
+
+    .first-section .containers .logo img {
+        display: none;
+        transition: 1s;
+    }
+
+    .second-section .containers .list p {
+        height: auto;
+        font-size: .9em;
+    }
+
+    .first-section .containers .intro img {
+        transition: 1s;
+        display: unset;
+        height: 260px;
+        width: 260px;
+    }
+
+    /* second section */
+    .second-section .containers {
+        display: flex;
+        margin: auto;
+        text-align: center;
+    
+    }
+}

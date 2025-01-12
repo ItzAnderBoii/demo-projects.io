@@ -1,0 +1,93 @@
+body {
+    margin-top: 90px;
+}
+.nav {
+    height: 80px;
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 0 5px 0 rgb(0,0,0,0.2);
+}
+
+.nav .containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav .containers .right h1 {
+    color: rgb(8, 102, 255);
+    font-family: Tahoma, sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.nav .containers .left .login-btn {
+    background: rgb(8, 102, 255);
+    padding: 5px 5px 5px 5px;
+    row-gap: 10px;
+    font-size: 1em;
+    color: white;
+    border-radius: 5px;
+    margin-left: 5px;
+    border: none;
+    transition: background .2s ease-in-out, opacity .2s ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav .containers .left .input-email {
+    padding: 5px 5px 5px 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(0,0,0,0.3);
+    transition: border .2s ease-in-out;
+}
+.nav .containers .left .input-pass {
+    padding: 5px 5px 5px 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 3px;
+    border: 1px solid rgb(0,0,0,0.3);
+    transition: border .2s ease-in-out;
+}
+
+.nav a {
+    color: rgb(8, 102, 255);
+    margin-right: 25px;
+    margin-left: 10px;
+    text-decoration: none;
+    transition: text-decoration .2s ease-in-out;
+}
+
+/* hovering system */
+.nav .login-btn:hover {
+    opacity: .9;
+    background: rgb(5, 87, 219);
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.nav .containers .input-email:hover, .nav .containers .input-pass:hover {
+    border: 1px solid rgb(0,0,0,1);
+}
+
+/* responsive */
+@media screen and (min-width: 10px) and (max-width: 750px) {
+    .nav .containers .input-email, .nav .containers .input-pass, .nav .containers a {
+        transition: all .2s ease-in-out;
+        display: none;
+    }
+
+    .nav .containers .login-btn {
+        margin-right: 10px;
+        height: 40px;
+    }
+    
+}

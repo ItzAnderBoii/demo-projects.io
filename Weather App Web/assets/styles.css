@@ -1,0 +1,122 @@
+body {
+    background: linear-gradient(to bottom, black, blue) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.card {
+    margin-top: 90px;
+    position: relative;
+    height: 500px;
+    margin-bottom: 30px;
+    width: 400px;
+    box-shadow: 0 0 5px 0 rgb(255,255,255,0.4),
+    0 0 10px 0 rgb(0,0,0,0.4);
+    border-radius: 25px;
+    justify-self: center;
+    background: linear-gradient(to bottom, rgb(221, 221, 221), white);
+}
+
+.card .col-1 {
+    position: absolute;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 5px 5px 5px 5px;
+    border-radius: 25px;
+    transition: box-shadow .2s ease-in-out;
+}
+
+.card .col-1 img {
+    height: 30px;
+}
+
+.card .col-1 h1 {
+    margin-left: 10px;
+    font-size: 1em;
+    color: black;
+    font-family: Tahoma, sans-serif;
+}
+
+.card .col-1:hover {
+    box-shadow: 0 0 10px 0 rgb(0,0,0,0.4);
+}
+
+.card .pre-col {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-right: 30px;
+}
+
+.card .pre-col img {
+    height: 25px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px 0 rgb(0,0,0,0.4);
+    border-radius: 55px;
+    transition:  transform .2s ease-in-out ,box-shadow .2s ease-in-out;
+}
+
+.card .pre-col img:active {
+    transform: rotate(60deg);
+}
+.card .pre-col img:hover {
+    box-shadow: 0 0 10px 0 rgba(79, 191, 255);
+}
+
+
+/* col 2 */
+.card .col-2 {
+    display: flex;
+    position: absolute;
+    margin: 155px;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card .col-2 img {
+    height: 100px;
+}
+
+
+.card .col-2 h1 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 2em;
+
+    color: black;
+}
+
+/* pop-up */
+.pop-up {
+    justify-self: center;
+    padding: 3px 40px 3px 40px;
+    background: rgb(0,0,0,0.4);
+    border-radius: 25px;
+    animation: pop-up 3.5s ;
+    opacity: 0;
+}
+
+.pop-up p {
+    color: white;
+    font-size: .8em;
+    font-family: Tahoma;
+}
+
+@keyframes pop-up {
+    from {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}

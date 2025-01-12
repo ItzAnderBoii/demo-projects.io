@@ -1,0 +1,29 @@
+
+/* keyframes */
+@keyframes HeaderAnim {
+    from {
+        opacity: .3;
+    }
+
+    to {
+       
+        opacity: 1;
+    }
+}
+
+
+
+/* divs */
+.first-section .containers {
+    animation: HeaderAnim 1.3s;
+
+}
+
+.second-section .containers {
+    animation: HeaderAnim 1.4s;
+}
+
+.third-section .containers {
+    animation: HeaderAnim 1.5s;
+}
+
