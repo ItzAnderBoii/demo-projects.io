@@ -1,0 +1,121 @@
+.device {
+    margin-top: 8.5%;
+    position: relative;
+    height: 480px;
+    width: 260px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    justify-self: center;
+    background-color: rgb(39, 39, 39);
+}
+
+.device .screen {
+    margin-top: 1.6%;
+    position: absolute;
+    height: 98%;
+    width: 98%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background: url('../os/wallpaper/WallpaperOS_1.jpg') no-repeat;
+    background-size: cover;
+    justify-self: center;
+    left: 0;
+    right: 0;
+
+}
+
+/* lock screen */
+.screen .lock-screen {
+    display: flex;
+    margin-top: 30%;
+    pointer-events: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.screen .lock-screen .col-1 h1 {
+    color: transparent;
+    font-family: sans-serif;
+    font-size: 3.5em;
+    margin-bottom: 0;
+    background: linear-gradient(to bottom, rgb(255,255,255), rgb(255,255,255), rgb(100,100,100));
+    background-clip: text;
+}
+
+.screen .lock-screen .col-1 b {
+    color: white;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 0;
+    
+}
+
+.lock-screen span {
+    animation: tictacanim 2.5s infinite;
+}
+
+
+
+/* additional features */
+ .dynamic-island {
+    position: absolute;
+    height: 15px;
+    width: 30%;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    justify-self: center;
+    background: rgb(10, 10, 10);
+    margin-top: 10px;
+    overflow: hidden;
+    transition: transform .2s ease-in-out;
+}
+
+.dynamic-island .contents-errors {
+    display: none;
+    font-size: .6em;
+    width: 100%;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.dynamic-island:active {
+    transform: scale(1.1);
+}
+
+/* keyframes */
+@keyframes tictacanim {
+   0% {
+    color: white;
+   }
+
+   50% {
+    color: rgb(100,100,100);
+   }
+
+   100% {
+    color: white;
+   }
+
+}
+
+@keyframes island_app_notif {
+    0% {
+        width: fit-content;
+    }
+
+    50% {
+        width: fit-content;
+    }
+
+    100% {
+        width: 30%;
+    }
+}

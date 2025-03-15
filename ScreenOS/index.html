@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScreenIphone | Demo</title>
+    <link rel="stylesheet" href="assets/stylesheets/first-styles.css">
+    <link rel="stylesheet" href="assets/stylesheets/xapps-styles.css">
+    <link rel="stylesheet" href="assets/stylesheets/xwidget.css">
+</head>
+<body>
+    <div class="device">
+        <div class="screen" id="deviceScr">
+            <div class="dynamic-island" id="dynamicIsland">
+                <div class="contents-errors" id="dyerr">
+                    <span style="color: rgb(255, 65, 65);">screenOS</span>: You can't acess the app.
+                </div>
+            </div>
+
+            <div class="home-layout" style="display: none;" id="homeOS">
+                <div class="app app-1">
+                   <img src="assets/os/img_icons/youtube.png" class="xicon yt" id="ytlaunch" alt="">
+                    <b style="color: white;">YouTube</b>
+                </div>
+
+                <div class="app app-2">
+                    <img src="assets/os/img_icons/instagram.png" class="xicon ins" alt="">
+                     <b style="color: white;">Instagram</b>
+                 </div>
+
+                 <div class="app app-3">
+                    <img src="assets/os/img_icons/gmail.png" class="xicon email" alt="">
+                     <b style="color: white;">Gmail</b>
+                 </div>
+
+                 
+
+                
+
+                 <img src="assets/os/wallpaper/widget_os.jpg" class="widget_1" alt="">
+                 
+                 <div class="bottom-bar">
+                    <img src="assets/os/img_icons/instagram.png" alt="">
+                    <img src="assets/os/img_icons/youtube.png" onclick="erryt()" alt="">
+                    <img src="assets/os/img_icons/gmail.png" alt="">
+                 </div>
+            </div>
+
+            <div class="lock-screen"  id="locked">
+                <div class="col-1">
+                    <h1>10<span>:</span>10</h1>
+                    <b>Thursday Februay 15th</b>
+                    <p style="color: white;font-weight: 500;font-family: sans-serif;font-size: .5em;position: absolute; bottom: 0; left: 0; right: 0;">click on the screen to unlock</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/app-fonctions.js"></script>
+    <script src="assets/js/lock.js"></script>
+</body>
+</html>

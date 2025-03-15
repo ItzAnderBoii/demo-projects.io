@@ -1,0 +1,11 @@
+.home-layout .widget_1 {
+    display: block;
+    position: absolute;
+    height: 150px;
+    width: 40%;
+    
+    margin-top: 40%;
+    margin-left: 53%;
+    border-radius: 15px;
+}
+
